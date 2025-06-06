@@ -2,7 +2,7 @@
 
 :root {
     --bg-dark: #0f1117;
-    --nav-bg: #1a1e26;
+    --nav-bg: #5e8dec65;
     --nav-text: #ffffff;
     --nav-hover: #00bcd4;
     --nav-padding: 1rem 1.5rem;
@@ -23,8 +23,11 @@ html {
 }
 
 header {
-    background-color: #504744;
-    padding: 1rem 0;
+   background-image: url('./Imagenes/header.gif');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 1rem 0;
 }
 
 nav {
@@ -32,7 +35,7 @@ nav {
     border-radius: var(--nav-border-radius);
     margin: 15px;
     padding: 0.5rem 1rem;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 204, 255, 0.6);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -78,7 +81,7 @@ p {
 
 .har {
     font-size: 50px;
-    color: white;
+    color: lightgray;
     font-family: 'Poppins', Times, serif;
     text-align: center;
     padding-top: 360px;
