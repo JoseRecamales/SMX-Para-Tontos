@@ -1,0 +1,91 @@
+    .accordion {
+      background-color: #ffffff;
+      color: #333;
+      cursor: pointer;
+      padding: 20px;
+      width: 100%;
+      border: none;
+      outline: none;
+      text-align: left;
+      font-size: 18px;
+      font-weight: 600;
+      transition: 0.3s;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .accordion::after {
+      content: "▾";
+      font-size: 20px;
+      position: absolute;
+      right: 20px;
+      transition: transform 0.3s;
+    }
+
+    .accordion.active::after {
+      transform: rotate(180deg);
+    }
+
+    .panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease;
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    .panel-content {
+      padding: 20px 0;
+    }
+
+    .ra-title {
+      background-color: #e53935;
+      color: white;
+      padding: 15px;
+      border-radius: 6px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .dates {
+      background-color: #ccff33;
+      padding: 10px;
+      border-radius: 6px;
+      font-weight: 600;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .link-box {
+      background-color: #f0f0f0;
+      padding: 15px;
+      border-left: 5px solid #1976d2;
+      border-radius: 6px;
+      margin-bottom: 10px;
+      transition: background-color 0.3s;
+      cursor: pointer;
+      color: black;
+    }
+
+    .link-box:hover {
+      background-color: #e0e0e0;
+    }
+
+    .link-box::before {
+      content: "📎 ";
+      margin-right: 5px;
+    }
+
+    .task-box::before {
+      content: "📝 ";
+      margin-right: 5px;
+    }
+    .link-box > a {
+        color: black;
+        text-decoration: none;
+    }

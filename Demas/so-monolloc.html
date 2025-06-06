@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../index.css?v=2">
+    <link rel="stylesheet" href="./desplegable.css?v=2">
+    <title>S.O Monolloc</title>
+</head>
+<body>
+<header>
+        <nav>
+                <button class="b-har"><a href="#explicacion"><p>Explicación</p><a></button>
+                <button class="b-har"><a href="#asignaturas"><p>Asignaturas</p><a></button>
+                <button class="b-har"><a href=""><p>Temas</p><a></button>
+            </ul>
+        </nav>
+    <section class="har"><h1>Sistemas operativos Monolloc</h1></section>
+</header>
+<main>    
+</div>    
+<section class="patamim">
+    <h1 id="explicacion">Explicación Asignatura</h1>
+        <p style="color: white;">Los sistemas operativos son importantes saberlos utilizar ya que es donde se trabaja en los ordenadores, el apartado grafico, los comandos y todo lo que tenga que ver con ejecutar procesos se trabaja desde un sistema operativo, hay varrios sistemas, pero lo</p>
+        <h1 id="temas" class="grande">Temas</h1><br>
+        
+
+<!--<button class="accordion">Unidades de información</button>
+<div class="panel">
+  <div class="panel-content">
+    <div class="ra-title">RA1 - Bits y Nombre Binarios</div>-->
+
+    <!-- Nivel 2 --
+    <button class="accordion">Unidades de información</button>
+    <div class="panel">
+      <div class="panel-content">
+        <div class="link-box">Escalera de conversión</div>
+        <p>Las unidades de informacion en la informatica se calculan en bits, es la unidad mas pequeña posible, se dividen en 0 y 1, un bit puede ser un 0 o un 1.</p>
+        <p>Para calcualar cuantos bits es un byte hay que dividilo 8, ya que un byte son 8 bits.</p>
+        <h3>Como pasamos de byts a Kb,MB,Gb,TB?</h3>
+        <p>Para pasar de byts a kB hay que dividir por 1024, cuando queremos subir de unidades hay que dividir, 
+          pero cuando queremos bajar las unidades por ejemplo 4MB a KB hay que multiplicar 1024, el ejemplo seria 4*1024=4.096</p>
+      </div>
+    </div>-->
+
+    <div class="link-box">SMX-MP0223-RA2-AEA2_2 - Format del document</div>
+    <div class="link-box">SMX-MP0223-RA2-AEA2_3 - Llistes</div>
+  </div>
+</div>
+        
+</section>
+<section></section>
+</main>
+</body>
+<script>
+  const accordions = document.querySelectorAll(".accordion");
+
+  accordions.forEach((acc) => {
+    acc.addEventListener("click", function () {
+      this.classList.toggle("active");
+
+      const panel = this.nextElementSibling;
+      if (panel.style.maxHeight) {
+        panel.style.maxHeight = null;
+      } else {
+        // Usamos scrollHeight de forma más fiable
+        panel.style.maxHeight = panel.scrollHeight + "px";
+
+        // Opción alternativa: usar setTimeout si hay muchas transiciones anidadas
+        setTimeout(() => {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }, 10);
+      }
+    });
+  });
+</script>
+
+
+<footer>Odio a los negros</footer>
