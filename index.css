@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --bg-dark: #0f1117;
+    --nav-bg: #40f57685;
+    --nav-text: #ffffff;
+    --nav-hover: #07d400;
+    --nav-padding: 1rem 1.5rem;
+    --nav-border-radius: 8px;
+    --transition-speed: 0.3s ease;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+   background-image: url('./Imagenes/header.gif');
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   padding: 1rem 0;
+   min-height: 1080px;
+}
+
+nav {
+    background-color: var(--nav-bg);
+    border-radius: var(--nav-border-radius);
+    margin: 15px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 8px rgba(150, 161, 44, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul {
+    display: inline;
+    gap: 2.5rem;
+    list-style: none;
+    padding: 10px;
+}
+nav a {
+    text-decoration: none;
+    color: var(--nav-text);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 20px;
+    border-radius: 5px;
+    transition: color var(--transition-speed), background-color var(--transition-speed);
+    margin-inline: 50px;
+}
+nav button:hover {
+    color: var(--nav-text);
+    background-color: var(--nav-hover);
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(0, 212, 0, 0.5);
+}
+body {
+    background: var(--bg-dark);
+}
+footer {
+    color: #ffffff;
+    text-align: center;
+    background-color: #0b2358;
+}
+p {
+    color: #ffff;
+    text-align: center;
+}
+.har {
+    font-size: 50px;
+    color: lightgray;
+    font-family: 'Poppins', Times, serif;
+    text-align: center;
+    padding-top: 360px;
+    padding-bottom: 360px;
+    letter-spacing: 5px;
+}
+.sub {
+    text-align: center;
+    padding-top: 10px;
+    color: azure;
+    font-size: 30px;
+}
+a {
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+a:hover {
+    color: var(--nav-text);
+    background-color:#00ccff;
+    transform: translateY(-2px);
+    box-shadow: 0 2px 5px rgba(133, 255, 33, 0.5);
+}
+.patamim {
+    font-size: 25px;
+    color: white;
+    font-family: 'Poppins', Times, serif;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 70px;
+    height: auto;
+h3 {
+    text-align: left;
+    font-size: 25px;
+    color: gray;
+    margin-left: 10px;
+    font-family: 'Poppins', Times, serif;
+    font-weight: bold;
+}
+h2 {
+    text-align: left;
+    font-size: 30px;
+    color: gray;
+    margin-left: 10px;
+    font-family: 'Poppins', Times, serif;
+    font-weight: bold;
+}
+}
+.patamim h1 {
+    letter-spacing: 5px;
+}
+.patamim > p {
+    padding-top: 20px;
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.idk {
+    color: #000000;
+}
+.pepito {
+    color: white; 
+}
+.servicio-grid {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.servicio-card {
+  background: #1a1d26;
+  border-radius: 12px;
+  padding: 1.5rem;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s, box-shadow 0.3s;
+  width: 233px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+.servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+.servicio-card img {
+  max-width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.servicio-card h3 {
+  color: var(--primary);
+  margin-bottom: 0.5rem;
+}
+.servicio-card p {
+  font-size: 0.95rem;
+  color: #d1d1d1;
+}
+.grande {
+  margin-top: 300px;
+  padding: 50px;
+  letter-spacing: 5px;
+  line-height: 2.5;
+}
+img {
+    border-radius: 5px;
+    color: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+/*Flex box!*/
+.cargador-movil{
+    display: flex;
+  flex-wrap: wrap;
+}
+.cargador-movil > div{
+    width: 50%;
+    text-align: left;
+    margin: 10px;
+    line-height: normal;
+}
+.cargador-tablet{
+    display: flex;
+  flex-wrap: wrap;
+}
+.cargador-tablet > div{
+    width: 25%;
+    text-align: center;
+    margin: 10px;
+}
+/*Fin del flexbox*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(135deg, #000000, #000000);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition: background 0.5s, box-shadow 0.3s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #1f1f1f, #838383);
+    box-shadow: 0px 0px 15px rgba(0, 255, 0, 0.8);
+}
