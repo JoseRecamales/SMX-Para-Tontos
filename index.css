@@ -323,3 +323,6 @@ img {
         width: 90%;
     }
 }
+.invisible {
+    border: none;
+}
